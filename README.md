@@ -1,2 +1,2 @@
 # Lista-Exec-03
-Listas da § lista de exercicios Curso Python Conditional.
+Listas da 3 lista de exercicios Curso Python Conditional.
