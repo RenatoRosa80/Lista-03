@@ -5,7 +5,7 @@ quantidade de números impares.
 """
 # Inicializa os contadores
 pares = 0
-impares = 0
+impares = 1
 
 # Recebendo os 10 números
 for i in range(1, 11):

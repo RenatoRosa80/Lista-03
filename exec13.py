@@ -27,3 +27,15 @@ else:
 
 # Exibe o resultado
 print(f"O resultado de {base} elevado ao {expoente} é: {resultado}")
+
+
+"""Entrada: o usuário informa a base e o expoente.
+
+Inicialização: o resultado começa em 1 (identidade da multiplicação).
+
+Laço for: multiplica a base pelo resultado repetidamente.
+
+Expoente negativo: caso o expoente seja negativo, calcula o inverso.
+
+Saída: imprime o resultado final."""
+
