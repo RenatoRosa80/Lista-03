@@ -11,39 +11,28 @@
 # altere o programa permitindo que o usuário digite o salário inicial do 
 # funcionário.
 # """
-# salario = 1000
-# percentual = 1.5
-# reajuste_salarial = 0
-# aumento_salarial = 0
 
-# salario += salario * (percentual / 100)
-# print(f"Ano 1996: aumento de {percentual:.2f}%, salário = R$ {salario:.2f}")
-
-# for ano in range( 1997,2025,):
-#     percentual*=2
-#     reajuste_salarial = salario * (percentual / 100)
-#     print(reajuste_salarial)
-#     aumento_salarial += reajuste_salarial 
-#     print(f"Ano {ano}: aumento de {percentual:.2f} %")
-        
-    
-
-       
-# print(f"\nSalário em 2024 = R$ {aumento_salarial:.2f}")
-
-
-# Versão com salário inicial fixo (R$ 1000)
-salario = 1000
+salario_inicial = float(input("\nDigite o salário inicial do funcionário: "))
+salario = salario_inicial
 percentual = 1.5
+reajuste_salarial = 0
+aumento_salarial = 0
 
-# Aplicar o primeiro aumento (1996)
 salario *= (1 + percentual / 100)
 print(f"Ano 1996: aumento de {percentual:.2f}%,\n salário = R$ {salario:.2f}")
 
-# Aplicar aumentos de 1997 até 2025
-for ano in range(1997, 2026):
+
+for ano in range( 1997,2025,):
     percentual *= 2  # Dobra o percentual a cada ano
     salario *= (1 + percentual / 100)
     print(f"Ano {ano}: aumento de {percentual:.2f}%,\n salário = R$ {salario:.2f}")
+    
 
-print(f"\nSalário em 2025 = R$ {salario:.2f}")
+       
+    print(f"\nSalário em 2025 =\n R$ {salario:.2f}")
+
+
+
+
+
+
