@@ -1,17 +1,33 @@
 """
-44. Faça um programa que leia o código dos itens pedidos e as quantidades desejadas. Calcule e mostre o valor a ser pago por item (preço * quantidade) e o total geral do pedido. Considere que o cliente deve informar quando o pedido deve ser encerrado. Em uma eleição presidencial existem quatro candidatos. Os votos são informados por meio de código. Os códigos utilizados são:
+44. Faça um programa que leia o código dos itens pedidos e as quantidades
+desejadas e o valor dos itens. Calcule e mostre o valor a ser pago por item (preço * quantidade)
+e o total geral do pedido. Considere que o cliente deve informar quando o 
+pedido deve ser encerrado."""
 
-- 1 , 2, 3, 4 - Votos para os respectivos candidatos
-(você deve montar a tabela ex: 1 - Jose/ 2- João/etc)
-- 5 - Voto Nulo
-- 6 - Voto em Branco
 
-Faça um programa que calcule e mostre:
+valor_total_item = 0
+valor_a_ser_pago = 0
+valor_item = 0
 
-- O total de votos para cada candidato;
-- O total de votos nulos;
-- O total de votos em branco;
-- A percentagem de votos nulos sobre o total de votos;
-- A percentagem de votos em branco sobre o total de votos. Para finalizar o conjunto de votos tem-se o valor zero.
+valor_a_ser_pago = 0
+while True:
+    codigo_item = int(input(" Código do item: "))
+    quantidade = int(input(" Qual a quantidade do item? "))
+    valor_item = float(input(" Valor do item: "))
+    valor_total_item = valor_item * quantidade
+    print(f" Valor total do item {codigo_item}: R$ {valor_total_item} ")
+    valor_a_ser_pago += valor_total_item
 
-"""
+    
+    finalizar = int(input(" Mais algum item - Informe 1 - para continuar ou 2 - para finalizar? "))
+
+    if finalizar == 2:
+        
+        break
+
+print(f" Valor Total da sua compra é R$ {valor_a_ser_pago:.2f} ")
+print(" Obrigado e volte sempre! ")
+        
+
+    
+   
